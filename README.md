@@ -51,7 +51,7 @@ Open `QGROUNDCONTROL` then in a new terminal:
 ```shell
 make px4_sitl gz_hm3_drone
 ```
-A new gazebo simulation will open and from now you can fly the custom drone by using the sticks.
+A new gazebo simulation will open and from now you can fly the custom drone by using the virtual sticks.
 
 
  ## **2. Force landing**
