@@ -31,8 +31,8 @@ Download [here](https://qgroundcontrol.com)
 
 ⚠️ Important: to use the custom drone, place the following files inside the `PX4-Autopilot` directory, more precisely:<br>
 
-`hm3_drone` folder → `PX4-Autopilot/Tools/simulation/gz/models/` directory<br>
-`6003_gz_hm3_drone` airframe → `PX4-Autopilot/ROMFS/px4fmu_common/init.d-posix/airframes/` directory<br>
+- `hm3_drone` folder → `PX4-Autopilot/Tools/simulation/gz/models/` directory<br>
+- `6003_gz_hm3_drone` airframe → `PX4-Autopilot/ROMFS/px4fmu_common/init.d-posix/airframes/` directory<br>
 
 This enables PX4 to spawn the custom UAV in the Gazebo simulator.
 
