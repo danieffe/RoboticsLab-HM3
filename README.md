@@ -30,7 +30,7 @@ Download [here](https://qgroundcontrol.com)
 
 To use your custom drone, place the following files inside the `PX4-Autopilot` directory, more precisely:
 `hm3_drone` folder → `PX4-Autopilot/Tools/simulation/gz/models/` directory<br>
-`6003_gz_hm3_drone` airframe → `PX4-Autopilot/ROMFS/px4fmu_common/init.d-posix/airframes/` directory
+`6003_gz_hm3_drone` airframe → `PX4-Autopilot/ROMFS/px4fmu_common/init.d-posix/airframes/` directory<br>
 This enables PX4 to spawn the custom UAV in the Gazebo simulator.
 
 ## Getting Started
@@ -42,8 +42,8 @@ source install/setup.bash
 
 # **Usage**
 
- ## **1. Fly custom hm3_drone**
-Open QGROUNDCONTROL then in a new terminal:
+ ## **1. Fly custom drone**
+Open `QGROUNDCONTROL` then in a new terminal:
 
 ```shell
 make px4_sitl gz_hm3_drone
@@ -52,12 +52,12 @@ A new gazebo simulation will open and from now you can fly the custom drone by u
 
 
  ## **2. Force landing**
-In a second terminal run the following command::
+In a terminal run the following command::
 
 ```shell
 ./DDS_run.sh
 ```
-And in a third terminal launch:
+And then in a second one launch the node:
 
 ```shell
 ros2 run force_land force_land
@@ -73,5 +73,5 @@ To test the correct functioning, it is advisable to do the takeoff directly abov
 cd /ros2_ws
 ros2 run offboard_rl spline_flight_node
 ```
-
+This will send a smooth 4D cubic B-spline trajectory (x, y, z, yaw) to PX4 in offboard mode.
 
