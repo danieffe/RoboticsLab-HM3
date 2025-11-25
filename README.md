@@ -4,7 +4,7 @@
 - `force_land` 
 - `offboard_rl`
 
-# 🛠️ Requirements
+# Requirements
 
 Before running the simulation and ROS 2 nodes, install the following external components:
 
@@ -30,7 +30,7 @@ Download [here](https://qgroundcontrol.com)
 
 To use your custom drone, place the following files inside the `PX4-Autopilot` directory:
 
-`hm3_drone` folder → `PX4-Autopilot/Tools/simulation/gz/models/`
+`hm3_drone` folder → `PX4-Autopilot/Tools/simulation/gz/models/`<br>
 `6003_gz_hm3_drone` airframe → `PX4-Autopilot/ROMFS/px4fmu_common/init.d-posix/airframes/`
 
 This enables PX4 to spawn the custom UAV in the Gazebo simulator.
