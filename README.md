@@ -1,6 +1,6 @@
 # Fly your drone
 
-## Available Packages in this Repository ##
+## Available Nodes in this Repository ##
 - `force_land` 
 - `offboard_rl`
 
