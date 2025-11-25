@@ -1,9 +1,37 @@
 # Fly your drone
 
 ## Available Packages in this Repository ##
-- `ros2_iiwa` 
-- `ros2_kdl_package`
-- `aruco_ros`
+- `force_land` 
+- `offboard_rl`
+
+# 🛠️ Requirements
+
+Before running the simulation and ROS 2 nodes, install the following external components:
+
+### **1. PX4 Autopilot (v1.16.0)**  
+Required for SITL simulation and integration with Gazebo.
+
+```bash
+git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+cd PX4-Autopilot
+git checkout v1.16.0
+
+### **2. px4_msgs**  
+```bash
+git clone https://github.com/PX4/px4_msgs.git
+cd px4_msgs
+git checkout release/1.16
+
+### **3. QGroundControl**
+Used to monitor flight data and arm/take off your drone.
+Download here:
+https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
+
+To use your custom drone, place the following files inside the PX4-Autopilot directory:
+hm3_drone/ folder → PX4-Autopilot/Tools/simulation/gz/models/
+6003_gz_hm3_drone airframe → PX4-Autopilot/ROMFS/px4fmu_common/init.d-posix/airframes/
+
+This enables PX4 to spawn your custom quadcopter in the Gazebo simulator.
 
 ## Getting Started
 ```shell
@@ -13,13 +41,6 @@ source install/setup.bash
 
 ```
 
-```shell
-git clone https://github.com/PX4/PX4-Autopilot.git --recursive
-cd PX4-Autopilot
-git checkout v1.16.0
-git clone https://github.com/PX4/px4_msgs.git
-git checkout release/1.16
-```
 
 Don't forget to move the folder hm3_drone in the      directory and the airframe file 6003_gz_hm3_drone in the       directory.
 
