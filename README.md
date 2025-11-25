@@ -15,12 +15,14 @@ Required for SITL simulation and integration with Gazebo.
 git clone https://github.com/PX4/PX4-Autopilot.git --recursive
 cd PX4-Autopilot
 git checkout v1.16.0
+```
 
 ### **2. px4_msgs**  
 ```bash
 git clone https://github.com/PX4/px4_msgs.git
 cd px4_msgs
 git checkout release/1.16
+```
 
 ### **3. QGroundControl**
 Used to monitor flight data and arm/take off your drone.
@@ -28,8 +30,9 @@ Download here:
 https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
 
 To use your custom drone, place the following files inside the PX4-Autopilot directory:
-hm3_drone/ folder → PX4-Autopilot/Tools/simulation/gz/models/
-6003_gz_hm3_drone airframe → PX4-Autopilot/ROMFS/px4fmu_common/init.d-posix/airframes/
+
+`hm3_drone` folder → `PX4-Autopilot/Tools/simulation/gz/models/`
+`6003_gz_hm3_drone` airframe → `PX4-Autopilot/ROMFS/px4fmu_common/init.d-posix/airframes/`
 
 This enables PX4 to spawn your custom quadcopter in the Gazebo simulator.
 
