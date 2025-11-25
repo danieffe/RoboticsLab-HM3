@@ -70,6 +70,7 @@ To test the correct functioning, it is advisable to do the takeoff directly abov
 
 
 ## **3. Flying in offboard mode**
+Always after launching the DDS agent, in a terminal launch the node:
 
 ```shell
 cd /ros2_ws
