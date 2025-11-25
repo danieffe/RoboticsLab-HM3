@@ -26,27 +26,21 @@ git checkout release/1.16
 
 ### **3. QGroundControl**
 Used to monitor flight data and arm/take off your drone.
-Download here:
-https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
+Download [here](https://qgroundcontrol.com)
 
-To use your custom drone, place the following files inside the PX4-Autopilot directory:
+To use your custom drone, place the following files inside the `PX4-Autopilot` directory:
 
 `hm3_drone` folder → `PX4-Autopilot/Tools/simulation/gz/models/`
 `6003_gz_hm3_drone` airframe → `PX4-Autopilot/ROMFS/px4fmu_common/init.d-posix/airframes/`
 
-This enables PX4 to spawn your custom quadcopter in the Gazebo simulator.
+This enables PX4 to spawn the custom UAV in the Gazebo simulator.
 
 ## Getting Started
 ```shell
 git clone https://github.com/danieffe/RoboticsLab-HM3.git
 colcon build 
 source install/setup.bash
-
 ```
-
-
-Don't forget to move the folder hm3_drone in the      directory and the airframe file 6003_gz_hm3_drone in the       directory.
-
 
 # **Usage**
 
