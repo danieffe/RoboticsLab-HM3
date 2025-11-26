@@ -46,7 +46,7 @@ source install/setup.bash
 # **Usage**
 
  ## **1. Fly custom drone**
-Open `QGROUNDCONTROL` then in a new terminal:
+Open `QGROUNDCONTROL` then in a new terminal within `PX4-Autopilot` directory:
 
 ```shell
 make px4_sitl gz_hm3_drone
