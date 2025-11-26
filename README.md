@@ -55,7 +55,7 @@ A new gazebo simulation will open and from now you can fly the custom drone by u
 
 
  ## **2. Force landing**
-In a terminal run the following command::
+In a terminal run the following command:
 
 ```shell
 ./DDS_run.sh
