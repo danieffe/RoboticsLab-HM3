@@ -74,7 +74,6 @@ To test the correct functioning, it is advisable to do the takeoff directly abov
 Always after launching the DDS agent, in a terminal launch the node:
 
 ```shell
-cd /ros2_ws
 ros2 run offboard_rl spline_flight_node
 ```
 This will send a smooth 4D cubic B-spline trajectory (x, y, z, yaw) to PX4 in offboard mode.
